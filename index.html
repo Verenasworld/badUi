@@ -19,12 +19,13 @@
             <li><a href="#content">BMI Rechner</a></li>
             <li><a href="#">Termine Vereinbaren</a></li>
             <li><a href="#">MEIN ANGEBOT </a></li>
-            <li><a href="#">Contakt</a></li>
+            <li><a href="#content">Contakt</a></li>
         </ul>
     </nav>
     <button class="button" onclick="document.body.style.backgroundColor = 'black'">DayMode</button>
     <button class="button" onclick="document.body.style.backgroundColor = 'white'">NightMode</button>
-    <button class="button" onclick="document.body.style.backgroundColor = '#c70f71'">NightMode</button>
+    <button class="button" onclick="document.body.style.backgroundColor = '#c70f71'">MännerMode</button>
+    <button class="button" onclick="document.body.style.backgroundColor = 'blue'">WomenMode</button>
 </div>
 <hr>
 <div class="content">
@@ -61,19 +62,102 @@
 
     <hr>
     <h1>Mein Angebot</h1>
-    <div class="content1" id="content">
+    <div class="content1 " id="content">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus at aut dicta dolor eligendi, error est fuga itaque, magnam maxime minima molestiae obcaecati officiis quos sed suscipit ullam veniam vero. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur magnam magni non repellendus. Aliquam aperiam aspernatur culpa expedita fugit illo ipsam maiores, odit officia porro quod, sit, sunt vero voluptates.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus at aut dicta dolor eligendi, error est fuga itaque, magnam maxime minima molestiae obcaecati officiis quos sed suscipit ullam veniam vero. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur magnam magni non repellendus. Aliquam aperiam aspernatur culpa expedita fugit illo ipsam maiores, odit officia porro quod, sit, sunt vero voluptates.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus at aut dicta dolor eligendi, error est fuga itaque, magnam maxime minima molestiae obcaecati officiis quos sed suscipit ullam veniam vero. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur magnam magni non repellendus. Aliquam aperiam aspernatur culpa expedita fugit illo ipsam maiores, odit officia porro quod, sit, sunt vero voluptates.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus at aut dicta dolor eligendi, error est fuga itaque, magnam maxime minima molestiae obcaecati officiis quos sed suscipit ullam veniam vero. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur magnam magni non repellendus. Aliquam aperiam aspernatur culpa expedita fugit illo ipsam maiores, odit officia porro quod, sit, sunt vero voluptates.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus at aut dicta dolor eligendi, error est fuga itaque, magnam maxime minima molestiae obcaecati officiis quos sed suscipit ullam veniam vero. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur magnam magni non repellendus. Aliquam aperiam aspernatur culpa expedita fugit illo ipsam maiores, odit officia porro quod, sit, sunt vero voluptates.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus at aut dicta dolor eligendi, error est fuga itaque, magnam maxime minima molestiae obcaecati officiis quos sed suscipit ullam veniam vero. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur magnam magni non repellendus. Aliquam aperiam aspernatur culpa expedita fugit illo ipsam maiores, odit officia porro quod, sit, sunt vero voluptates.</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus at aut dicta dolor eligendi, error est fuga itaque, magnam maxime minima molestiae obcaecati officiis quos sed suscipit ullam veniam vero. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur magnam magni non repellendus. Aliquam aperiam aspernatur culpa expedita fugit illo ipsam maiores, odit officia porro quod, sit, sunt vero voluptates.
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus at aut dicta dolor eligendi, error est fuga itaque, magnam maxime minima molestiae obcaecati officiis quos sed suscipit ullam veniam vero. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur magnam magni non repellendus. Aliquam aperiam aspernatur culpa expedita fugit illo ipsam maiores, odit officia porro quod, sit, sunt vero voluptates.
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus at aut dicta dolor eligendi, error est fuga itaque, magnam maxime minima molestiae obcaecati officiis quos sed suscipit ullam veniam vero. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur magnam magni non repellendus. Aliquam aperiam aspernatur culpa expedita fugit illo ipsam maiores, odit officia porro quod, sit, sunt vero voluptates.
-            <img src="" alt="">
+            <img id="ownImage" class="ownImg" src="img/lake-constance-g2a844ae72_640.jpg" alt="">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus at aut dicta dolor eligendi, error est fuga itaque, magnam maxime minima molestiae obcaecati officiis quos sed suscipit ullam veniam vero. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur magnam magni non repellendus. Aliquam aperiam aspernatur culpa expedita fugit illo ipsam maiores, odit officia porro quod, sit, sunt vero voluptates.</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus at aut dicta dolor eligendi, error est fuga itaque, magnam maxime minima molestiae obcaecati officiis quos sed suscipit ullam veniam vero. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur magnam magni non repellendus. Aliquam aperiam aspernatur culpa expedita fugit illo ipsam maiores, odit officia porro quod, sit, sunt vero voluptates.</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus at aut dicta dolor eligendi, error est fuga itaque, magnam maxime minima molestiae obcaecati officiis quos sed suscipit ullam veniam vero. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur magnam magni non repellendus. Aliquam aperiam aspernatur culpa expedita fugit illo ipsam maiores, odit officia porro quod, sit, sunt vero voluptates.</p>
     </div>
     <hr>
-    <h1>Wähle einen Termin</h1>
-    
+  <div class="imgbigger" style="height: 200px">
+      <button name="" type="button" onclick="ani()" value="Click"><img id="img" src="img/fitness-g21be938f5_640.jpg" width="100" height="100" /></button>
+
+  </div>
+    <hr>
+    <h1>Trainings Arten</h1>
+   <div class="art">
+
+       <div class="card" style="width: 18rem;">
+           <img class="card-img-top" src="img/dumbbells-g27104d2f0_640.jpg" alt="Card image cap">
+           <div class="card-body">
+               <h5 class="card-title">Card title</h5>
+               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+               <a id="btn1" href="#" class="btn btn-primary">Go somewhere</a>
+           </div>
+       </div><div class="card" style="width: 18rem;">
+       <img class="card-img-top" src="img/dumbbells-g27104d2f0_640.jpg" alt="Card image cap">
+       <div class="card-body">
+           <h5 class="card-title">Card title</h5>
+           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+           <a id="btn2" href="newSide.html" class="btn btn-primary">Go somewhere</a>
+       </div>
+   </div><div class="card" style="width: 18rem;">
+       <img class="card-img-top" src="img/dumbbells-g27104d2f0_640.jpg" alt="Card image cap">
+       <div class="card-body">
+           <h5 class="card-title">Card title</h5>
+           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+           <a href="img" class="btn btn-primary">Go somewhere</a>
+           <input name="" type="button" onclick="ani()" value="Click">
+       </div>
+   </div><div class="card" style="width: 18rem;">
+       <img class="card-img-top" src="img/dumbbells-g27104d2f0_640.jpg" alt="Card image cap">
+       <div class="card-body">
+           <h5 class="card-title">Card title</h5>
+           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+           <a href="#" class="btn btn-primary">Go somewhere</a>
+       </div>
+   </div><div class="card" style="width: 18rem;">
+       <img class="card-img-top" src="img/dumbbells-g27104d2f0_640.jpg" alt="Card image cap">
+       <div class="card-body">
+           <h5 class="card-title">Card title</h5>
+           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+           <a href="#" class="btn btn-primary">Go somewhere</a>
+       </div>
+   </div><div class="card" style="width: 18rem;">
+       <img class="card-img-top" src="img/dumbbells-g27104d2f0_640.jpg" alt="Card image cap">
+       <div class="card-body">
+           <h5 class="card-title">Card title</h5>
+           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+           <a href="#" class="btn btn-primary">Go somewhere</a>
+       </div>
+   </div><div class="card" style="width: 18rem;">
+       <img class="card-img-top" src="img/dumbbells-g27104d2f0_640.jpg" alt="Card image cap">
+       <div class="card-body">
+           <h5 class="card-title">Card title</h5>
+           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+           <a href="#" class="btn btn-primary">Go somewhere</a>
+       </div>
+   </div><div class="card" style="width: 18rem;">
+       <img class="card-img-top" src="img/dumbbells-g27104d2f0_640.jpg" alt="Card image cap">
+       <div class="card-body">
+           <h5 class="card-title">Card title</h5>
+           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+           <a href="#" class="btn btn-primary">Go somewhere</a>
+       </div>
+   </div><div class="card" style="width: 18rem;">
+       <img class="card-img-top" src="img/dumbbells-g27104d2f0_640.jpg" alt="Card image cap">
+       <div class="card-body">
+           <h5 class="card-title">Card title</h5>
+           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+           <a href="#" class="btn btn-primary">Go somewhere</a>
+       </div>
+   </div><div class="card" style="width: 18rem;">
+       <img class="card-img-top" src="img/dumbbells-g27104d2f0_640.jpg" alt="Card image cap">
+       <div class="card-body">
+           <h5 class="card-title">Card title</h5>
+           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+           <a href="#" class="btn btn-primary">Go somewhere</a>
+       </div>
+   </div>
+   </div>
+
+
+
+
     <hr>
     <h1>Schicke mir ein Email </h1>
     <form class="needs-validation" novalidate autocomplete="on">
@@ -110,56 +194,63 @@
                 <label for="validationCustom03">City</label>
                 <input type="text" class="form-control" id="validationCustom03" placeholder="City" required>
                 <div class="invalid-feedback">
-                    Please provide a valid city.
+                    deine Angabe ist nicht korrekt !
                 </div>
             </div>
             <div class="col-md-3 mb-3">
                 <label for="validationCustom04">State</label>
                 <input type="text" class="form-control" id="validationCustom04" placeholder="State" required>
                 <div class="invalid-feedback">
-                    Please provide a valid state.
+                    deine Angabe ist nicht korrekt !
                 </div>
             </div>
             <div class="col-md-12 mb-3">
                 <label for="validationCustom05">sozialversicher Nummer</label>
                 <input type="text" class="form-control" id="validationCustom05" placeholder="your birthday" required>
                 <div class="invalid-feedback">
+                    deine Angabe ist nicht korrekt !
                 </div>
             </div>
             <div class="col-md-12 mb-3">
                 <label for="validationCustom05">Geburtsdatum</label>
                 <input type="text" class="form-control" id="validationCustom06" placeholder="sozialversicherungnummer" required>
                 <div class="invalid-feedback">
+                    deine Angabe ist nicht korrekt !
                 </div>
             </div>
             <div class="col-md-12 mb-3">
                 <label for="validationCustom05">Lieblings Sportler</label>
                 <input type="text" class="form-control" id="validationCustom07" placeholder="Dein Lieblings Sportler" required>
                 <div class="invalid-feedback">
+                    deine Angabe ist nicht korrekt !
                 </div>
             </div>
             <div class="col-md-6 mb-3">
                 <label for="validationCustom05">Lieblings Essen</label>
                 <input type="text" class="form-control" id="validationCustom08" placeholder="Dein Lieblings essen" required>
                 <div class="invalid-feedback">
+                    deine Angabe ist nicht korrekt !
                 </div>
             </div>
             <div class="col-md-6 mb-3">
                 <label for="validationCustom05">Lieblings Sportart</label>
                 <input type="text" class="form-control" id="validationCustom09" placeholder="Dein Lieblings Sport" required>
                 <div class="invalid-feedback">
+                    deine Angabe ist nicht korrekt !
                 </div>
             </div>
             <div class="col-md-6 mb-3">
                 <label for="validationCustom05">Größe</label>
                 <input type="text" class="form-control" id="validationCustom10" placeholder="Größe" required>
                 <div class="invalid-feedback">
+                    deine Angabe ist nicht korrekt !
                 </div>
             </div>
             <div class="col-md-6 mb-3">
                 <label for="validationCustom05">Gewicht</label>
                 <input type="text" class="form-control" id="validationCustom11" placeholder="Gewicht" required>
                 <div class="invalid-feedback">
+                    deine Angabe ist nicht korrekt !
                 </div>
             </div>
         </div>
@@ -177,6 +268,7 @@
         <button class="" type="submit">Danke für deine Nachricht</button>
     </form>
 </div>
+
 
 
 

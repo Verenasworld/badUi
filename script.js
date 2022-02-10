@@ -1,14 +1,4 @@
-//bmi berechnen aber nur text ausgabe die berechnung ist falsch bitte geben sie noch mal ihre größe ein
 
-
-
-
-// function bmiValue() {
-//     let result = "bitte mach dir einen Termin aus und schreibe mir es wird Zeit";
-//     const lol = document.querySelector('#result1');
-//     lol.innterHtml = result;
-//     console.log(result);
-// }
 
 console.log("test" + document.getElementById("bmiBtn"))
 
@@ -16,6 +6,18 @@ document.getElementById("bmiBtn").addEventListener("click", function () {
     document.getElementById("result1").innerHTML = "bitte mach dir einen Termin aus und schreibe mir es wird Zeit"
 })
 
+document.getElementById('ownImage').addEventListener("mousemove",function (){
+    alert("da bist du falsch")
+} )
+
+document.getElementById('btn1').addEventListener("click", function (){
+alert("du bist falsch")
+})
+
+
+function ani() {
+    document.getElementById('img').className = 'classname';
+}
 // Example starter JavaScript for disabling form submissions if there are invalid fields
 !function () {
     'use strict';

@@ -70,6 +70,7 @@ hr{
     flex-direction: row;
     justify-content: center;
     text-align: center;
+    height: 500px;
 }
 .bmiRechner{
     display: flex;
@@ -80,7 +81,51 @@ hr{
 }
 
 #result1{
-    font-size: 40px;
+    font-size: 100px;
     font-family: "Segoe UI Emoji";
     background-color: red;
+}
+.ownImg{
+    border-radius: 150px;
+    width: 200px;
+}
+
+.ownImg:hover{
+    transform: translateY(40px);
+}
+
+.content1{
+    background-image: url("img/lake-constance-g2a844ae72_640.jpg");
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.card{
+    text-align: center;
+    align-content: center;
+    align-items: center;
+}
+
+.art{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+.classname {
+    -webkit-animation-name: cssAnimation;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-iteration-count: 3;
+    -webkit-animation-timing-function: ease;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes cssAnimation {
+    from {
+        -webkit-transform: rotate(0deg) scale(1) skew(0deg) translate(100px);
+    }
+    to {
+        -webkit-transform: rotate(0deg) scale(2) skew(0deg) translate(100px);
+    }
 }
