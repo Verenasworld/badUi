@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>BadUI</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous"></head>
@@ -16,7 +16,7 @@
     <nav>
         <ul>
             <li><a href="#">Home</a></li>
-            <li><a href="#">BMI Rechner</a></li>
+            <li><a href="#content">BMI Rechner</a></li>
             <li><a href="#">Termine Vereinbaren</a></li>
             <li><a href="#">MEIN ANGEBOT </a></li>
             <li><a href="#">Contakt</a></li>
@@ -24,6 +24,7 @@
     </nav>
     <button class="button" onclick="document.body.style.backgroundColor = 'black'">DayMode</button>
     <button class="button" onclick="document.body.style.backgroundColor = 'white'">NightMode</button>
+    <button class="button" onclick="document.body.style.backgroundColor = '#c70f71'">NightMode</button>
 </div>
 <hr>
 <div class="content">
@@ -41,23 +42,38 @@
             </div>
         </div>
     </div>
-    <img src="" alt="">
+
+    <hr>
+    <br>
+    <h1>Berechne deinen BMI </h1>
+
     <div class="card_bmi">
 
-        <hr>
-        <h1>Berechne deinen BMI </h1>
         <div class="bmiRechner">
             <input id="weight" type="text" placeholder="weight">
             <input id="height" type="text" placeholder="height">
             <button type="button" id="bmiBtn">Your BMI </button>
-            <div id="result1">vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv</div>
+
         </div>
+        <div id="result1"></div>
 
     </div>
 
     <hr>
-    <h1>Wähle ein Datum </h1>
-
+    <h1>Mein Angebot</h1>
+    <div class="content1" id="content">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus at aut dicta dolor eligendi, error est fuga itaque, magnam maxime minima molestiae obcaecati officiis quos sed suscipit ullam veniam vero. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur magnam magni non repellendus. Aliquam aperiam aspernatur culpa expedita fugit illo ipsam maiores, odit officia porro quod, sit, sunt vero voluptates.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus at aut dicta dolor eligendi, error est fuga itaque, magnam maxime minima molestiae obcaecati officiis quos sed suscipit ullam veniam vero. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur magnam magni non repellendus. Aliquam aperiam aspernatur culpa expedita fugit illo ipsam maiores, odit officia porro quod, sit, sunt vero voluptates.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus at aut dicta dolor eligendi, error est fuga itaque, magnam maxime minima molestiae obcaecati officiis quos sed suscipit ullam veniam vero. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur magnam magni non repellendus. Aliquam aperiam aspernatur culpa expedita fugit illo ipsam maiores, odit officia porro quod, sit, sunt vero voluptates.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus at aut dicta dolor eligendi, error est fuga itaque, magnam maxime minima molestiae obcaecati officiis quos sed suscipit ullam veniam vero. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur magnam magni non repellendus. Aliquam aperiam aspernatur culpa expedita fugit illo ipsam maiores, odit officia porro quod, sit, sunt vero voluptates.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus at aut dicta dolor eligendi, error est fuga itaque, magnam maxime minima molestiae obcaecati officiis quos sed suscipit ullam veniam vero. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur magnam magni non repellendus. Aliquam aperiam aspernatur culpa expedita fugit illo ipsam maiores, odit officia porro quod, sit, sunt vero voluptates.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus at aut dicta dolor eligendi, error est fuga itaque, magnam maxime minima molestiae obcaecati officiis quos sed suscipit ullam veniam vero. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur magnam magni non repellendus. Aliquam aperiam aspernatur culpa expedita fugit illo ipsam maiores, odit officia porro quod, sit, sunt vero voluptates.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus at aut dicta dolor eligendi, error est fuga itaque, magnam maxime minima molestiae obcaecati officiis quos sed suscipit ullam veniam vero. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur magnam magni non repellendus. Aliquam aperiam aspernatur culpa expedita fugit illo ipsam maiores, odit officia porro quod, sit, sunt vero voluptates.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus at aut dicta dolor eligendi, error est fuga itaque, magnam maxime minima molestiae obcaecati officiis quos sed suscipit ullam veniam vero. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur magnam magni non repellendus. Aliquam aperiam aspernatur culpa expedita fugit illo ipsam maiores, odit officia porro quod, sit, sunt vero voluptates.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus at aut dicta dolor eligendi, error est fuga itaque, magnam maxime minima molestiae obcaecati officiis quos sed suscipit ullam veniam vero. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur magnam magni non repellendus. Aliquam aperiam aspernatur culpa expedita fugit illo ipsam maiores, odit officia porro quod, sit, sunt vero voluptates.
+            <img src="" alt="">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus at aut dicta dolor eligendi, error est fuga itaque, magnam maxime minima molestiae obcaecati officiis quos sed suscipit ullam veniam vero. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur magnam magni non repellendus. Aliquam aperiam aspernatur culpa expedita fugit illo ipsam maiores, odit officia porro quod, sit, sunt vero voluptates.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus at aut dicta dolor eligendi, error est fuga itaque, magnam maxime minima molestiae obcaecati officiis quos sed suscipit ullam veniam vero. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur magnam magni non repellendus. Aliquam aperiam aspernatur culpa expedita fugit illo ipsam maiores, odit officia porro quod, sit, sunt vero voluptates.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus at aut dicta dolor eligendi, error est fuga itaque, magnam maxime minima molestiae obcaecati officiis quos sed suscipit ullam veniam vero. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur magnam magni non repellendus. Aliquam aperiam aspernatur culpa expedita fugit illo ipsam maiores, odit officia porro quod, sit, sunt vero voluptates.</p>
+    </div>
+    <hr>
+    <h1>Wähle einen Termin</h1>
+    
     <hr>
     <h1>Schicke mir ein Email </h1>
     <form class="needs-validation" novalidate autocomplete="on">
@@ -104,39 +120,45 @@
                     Please provide a valid state.
                 </div>
             </div>
-            <div class="col-md-3 mb-3">
-                <label for="validationCustom05">Geburtsdatum</label>
+            <div class="col-md-12 mb-3">
+                <label for="validationCustom05">sozialversicher Nummer</label>
                 <input type="text" class="form-control" id="validationCustom05" placeholder="your birthday" required>
                 <div class="invalid-feedback">
                 </div>
             </div>
-            <div class="col-md-3 mb-3">
+            <div class="col-md-12 mb-3">
                 <label for="validationCustom05">Geburtsdatum</label>
                 <input type="text" class="form-control" id="validationCustom06" placeholder="sozialversicherungnummer" required>
                 <div class="invalid-feedback">
                 </div>
             </div>
-            <div class="col-md-3 mb-3">
-                <label for="validationCustom05">Geburtsdatum</label>
-                <input type="text" class="form-control" id="validationCustom07" placeholder="sozialversicherungnummer" required>
+            <div class="col-md-12 mb-3">
+                <label for="validationCustom05">Lieblings Sportler</label>
+                <input type="text" class="form-control" id="validationCustom07" placeholder="Dein Lieblings Sportler" required>
                 <div class="invalid-feedback">
                 </div>
             </div>
-            <div class="col-md-3 mb-3">
-                <label for="validationCustom05">Geburtsdatum</label>
-                <input type="text" class="form-control" id="validationCustom08" placeholder="sozialversicherungnummer" required>
+            <div class="col-md-6 mb-3">
+                <label for="validationCustom05">Lieblings Essen</label>
+                <input type="text" class="form-control" id="validationCustom08" placeholder="Dein Lieblings essen" required>
                 <div class="invalid-feedback">
                 </div>
             </div>
-            <div class="col-md-3 mb-3">
-                <label for="validationCustom05">Geburtsdatum</label>
-                <input type="text" class="form-control" id="validationCustom09" placeholder="sozialversicherungnummer" required>
+            <div class="col-md-6 mb-3">
+                <label for="validationCustom05">Lieblings Sportart</label>
+                <input type="text" class="form-control" id="validationCustom09" placeholder="Dein Lieblings Sport" required>
                 <div class="invalid-feedback">
                 </div>
             </div>
-            <div class="col-md-3 mb-3">
-                <label for="validationCustom05">Geburtsdatum</label>
-                <input type="text" class="form-control" id="validationCustom10" placeholder="sozialversicherungnummer" required>
+            <div class="col-md-6 mb-3">
+                <label for="validationCustom05">Größe</label>
+                <input type="text" class="form-control" id="validationCustom10" placeholder="Größe" required>
+                <div class="invalid-feedback">
+                </div>
+            </div>
+            <div class="col-md-6 mb-3">
+                <label for="validationCustom05">Gewicht</label>
+                <input type="text" class="form-control" id="validationCustom11" placeholder="Gewicht" required>
                 <div class="invalid-feedback">
                 </div>
             </div>
@@ -159,6 +181,6 @@
 
 
 
-
+<script src="script.js"></script>
 </body>
 </html>

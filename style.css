@@ -63,16 +63,24 @@ hr{
     box-shadow: 0 0 10px 1px black;
 }
 .carousel-inner{
-    height: 20vh;
+    height: 50vh;
 }
 .card_bmi{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     text-align: center;
 }
 .bmiRechner{
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
     width: 30vw;
 }
 
+#result1{
+    font-size: 40px;
+    font-family: "Segoe UI Emoji";
+    background-color: red;
+}
