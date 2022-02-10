@@ -1,3 +1,9 @@
+//shop
+function shopping(){
+    let psdl =  document.getElementById('password').value;
+    console.log("testausgabe password: "+psdl);
+}
+
 //bmi
 document.getElementById("bmiBtn").addEventListener("click", function () {
     document.getElementById("result1").innerHTML = "bitte mach dir einen Termin aus und schreibe mir es wird Zeit sich zu bewegen "
@@ -12,20 +18,30 @@ document.getElementById('btn1').addEventListener("click", function () {
 })
 
 
-document.getElementById('hr').addEventListener("mouseover", function (){
-    document.getElementById('container').scrollLeft += 20;
-});
+
+//arrow move up
+function moveUp(){
+   let arrowMove=  document.getElementsByClassName('arrow');
+
+    arrowMove.addEventListener('mousemove',mouseOverEffect());
+
+}
+function mouseOverEffect() {
+    this.classList.add('moveup');
+}
+
+
 
 
 //logo click function move logo to the right
-let train = document.getElementById('train');
-train.onclick = function () {
+let logo = document.getElementById('logo');
+logo.onclick = function () {
     let start = Date.now();
 
     let timer = setInterval(function () {
         let timePassed = Date.now() - start;
 
-        train.style.left = timePassed / 5 + 'px';
+        logo.style.left = timePassed / 2 + 'px';
 
         if (timePassed > 2000) clearInterval(timer);
 

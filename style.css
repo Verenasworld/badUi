@@ -17,6 +17,9 @@
     top: 0;
     left: 10px;
     font-size: 2rem;
+    color: deeppink;
+    background: linear-gradient(#c70f71,black);
+    cursor: pointer;
 }
 
 .logo:hover {
@@ -156,7 +159,10 @@ hr {
     cursor: crosshair;
 
 }
+.moveup{
+    transform: translateX(-500px);
 
+}
 .socialmedia {
     position: fixed;
     top: 50%;
@@ -164,3 +170,9 @@ hr {
     display: flex;
     flex-direction: column;
 }
+
+.footer{
+    background-color: #c70f71;
+    text-align: center;
+}
+

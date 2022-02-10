@@ -15,11 +15,8 @@
           integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 </head>
 <body>
-<!--<img id="train" src="https://js.cx/clipart/train.gif">-->
 
-
-
-<h6 id="train" class="logo">SportyBlog</h6>
+<h6 id="logo" class="logo">SportyBlog</h6>
 <div class="navi" id="change">
     <nav>
         <ul>
@@ -28,6 +25,40 @@
             <li><a href="#btn1">My Top Products</a></li>
             <li><a href="#change">MEIN ANGEBOT </a></li>
             <li><a href="#content">Contact</a></li>
+            <svg onclick="shopping()" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                 class="bi bi-cart4" viewBox="0 0 16 16">
+                <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
+            </svg>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                Shop
+            </button>
+            <!--            modal-->
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                 aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                            <input type="text" placeholder="username">
+                            <!--                            badly input log-->
+                            <input class="password" id="password" type="number" placeholder="Password">
+                            <button id="closeModel" type="button" class="close" data-dismiss="modal" aria-label="Close">
+
+
+                                <span aria-hidden="true">&times;</span>
+
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            ...
+                        </div>
+                        <div class="modal-footer">
+                            <button id="closeModal" type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" onclick="location.href = 'index.html';">Save changes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </ul>
     </nav>
 </div>
@@ -66,7 +97,9 @@
         <div id="result1"></div>
 
     </div>
-    <div id="container" class="container"><hr></div>
+    <div id="container" class="container">
+        <hr>
+    </div>
 
     <h1>Mein Angebot</h1>
     <div class="content1 " id="content">
@@ -146,242 +179,262 @@
     </div>
 </div>
 
-<h >
-<h1>Trainings Arten</h1>
-<div class="art">
+<h>
+    <h1>Trainings Arten</h1>
+    <div class="art">
 
-    <div class="card" style="width: 19rem;">
-        <img class="card-img-top" src="img/01009106_00033310-Seniorin-Senior-Lebensfreude-Hüpfen-Seniorenpaar.jpg" alt="Card image cap" aria-describedby="https://www.shotshop.com/stockphoto/mmq-ppa-seniorin-senior-lebensfreude-h%C3%BCpfen-seniorenpaar">
-        <div class="card-body">
-            <h5 class="card-title">HÜPFEN</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
-            <a id="btn1" href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-    </div>
-    <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="img/dumbbells-g27104d2f0_640.jpg" alt="Card image cap">
-        <div class="card-body">
-            <h5 class="card-title">KRABBELN</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
-            <a id="btn2" href="newSide.html" class="btn btn-primary">Go somewhere</a>
-        </div>
-    </div>
-    <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="img/dumbbells-g27104d2f0_640.jpg" alt="Card image cap">
-        <div class="card-body">
-            <h5 class="card-title">Hände drehen</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
-            <a href="newSide.html" class="btn btn-primary">Go somewhere</a>
-        </div>
-    </div>
-    <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="img/dumbbells-g27104d2f0_640.jpg" alt="Card image cap">
-        <div class="card-body">
-            <h5 class="card-title">Beine werfen</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
-            <a href="newSide.html" class="btn btn-primary">Go somewhere</a>
-        </div>
-    </div>
-    <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="img/dumbbells-g27104d2f0_640.jpg" alt="Card image cap">
-        <div class="card-body">
-            <h5 class="card-title">hüften kippen</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
-            <a href="newSide.html" class="btn btn-primary">Go somewhere</a>
-        </div>
-    </div>
-    <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="img/dumbbells-g27104d2f0_640.jpg" alt="Card image cap">
-        <div class="card-body">
-            <h5 class="card-title">bauch einziehen</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
-            <a href="newSide.html" class="btn btn-primary">Go somewhere</a>
-        </div>
-    </div>
-    <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="img/dumbbells-g27104d2f0_640.jpg" alt="Card image cap">
-        <div class="card-body">
-            <h5 class="card-title">gerade sitzen</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
-            <a href="newSide.html" class="btn btn-primary">Go somewhere</a>
-        </div>
-    </div>
-    <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="img/dumbbells-g27104d2f0_640.jpg" alt="Card image cap">
-        <div class="card-body">
-            <h5 class="card-title">herumlaufen</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
-            <a href="newSide.html" class="btn btn-primary">Go somewhere</a>
-        </div>
-    </div>
-    <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="img/dumbbells-g27104d2f0_640.jpg" alt="Card image cap">
-        <div class="card-body">
-            <h5 class="card-title">gewicht heben </h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
-            <a href="newSide.html" class="btn btn-primary">Go somewhere</a>
-        </div>
-    </div>
-    <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="img/dumbbells-g27104d2f0_640.jpg" alt="Card image cap">
-        <div class="card-body">
-            <h5 class="card-title">booty bump</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
-            <a href="newSide.html" class="btn btn-primary">Go somewhere</a>
-        </div>
-    </div>
-</div>
-
-
-<hr>
-<h1>Schicke mir ein Email </h1>
-<form class="needs-validation" novalidate autocomplete="on">
-    <div class="form-row">
-        <div class="col-md-6 mb-3">
-            <label for="validationCustom01">First name</label>
-            <input type="text" class="form-control" id="validationCustom01" placeholder="First name" value="" required>
-            <div class="valid-feedback">
-                Looks good!
+        <div class="card" style="width: 19rem;">
+            <img class="card-img-top" src="img/01009106_00033310-Seniorin-Senior-Lebensfreude-Hüpfen-Seniorenpaar.jpg"
+                 alt="Card image cap"
+                 aria-describedby="https://www.shotshop.com/stockphoto/mmq-ppa-seniorin-senior-lebensfreude-h%C3%BCpfen-seniorenpaar">
+            <div class="card-body">
+                <h5 class="card-title">HÜPFEN</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's
+                    content.</p>
+                <a id="btn1" href="#" class="btn btn-primary">Go somewhere</a>
             </div>
         </div>
-        <div class="col-md-4 mb-3">
-            <label for="validationCustom02">Last name</label>
-            <input type="text" class="form-control" id="validationCustom02" placeholder="Last name" value="" required>
-            <div class="valid-feedback">
-                Looks good!
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="img/dumbbells-g27104d2f0_640.jpg" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">KRABBELN</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's
+                    content.</p>
+                <a id="btn2" href="newSide.html" class="btn btn-primary">Go somewhere</a>
             </div>
         </div>
-        <div class="col-md-6 mb-3">
-            <label for="validationCustomUsername">Username</label>
-            <div class="input-group">
-                <div class="input-group-prepend">
-                    <span class="input-group-text" id="inputGroupPrepend">@</span>
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="img/dumbbells-g27104d2f0_640.jpg" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Hände drehen</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's
+                    content.</p>
+                <a href="newSide.html" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="img/dumbbells-g27104d2f0_640.jpg" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Beine werfen</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's
+                    content.</p>
+                <a href="newSide.html" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="img/dumbbells-g27104d2f0_640.jpg" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">hüften kippen</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's
+                    content.</p>
+                <a href="newSide.html" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="img/dumbbells-g27104d2f0_640.jpg" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">bauch einziehen</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's
+                    content.</p>
+                <a href="newSide.html" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="img/dumbbells-g27104d2f0_640.jpg" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">gerade sitzen</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's
+                    content.</p>
+                <a href="newSide.html" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="img/dumbbells-g27104d2f0_640.jpg" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">herumlaufen</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's
+                    content.</p>
+                <a href="newSide.html" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="img/dumbbells-g27104d2f0_640.jpg" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">gewicht heben </h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's
+                    content.</p>
+                <a href="newSide.html" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="img/dumbbells-g27104d2f0_640.jpg" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">booty bump</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's
+                    content.</p>
+                <a href="newSide.html" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+    </div>
+
+
+    <hr>
+    <h1>Schicke mir ein Email </h1>
+    <form class="needs-validation" novalidate autocomplete="on">
+        <div class="form-row">
+            <div class="col-md-6 mb-3">
+                <label for="validationCustom01">First name</label>
+                <input type="text" class="form-control" id="validationCustom01" placeholder="First name" value=""
+                       required>
+                <div class="valid-feedback">
+                    Looks good!
                 </div>
-                <input type="text" class="form-control" id="validationCustomUsername" placeholder="Username"
-                       aria-describedby="inputGroupPrepend" required>
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="validationCustom02">Last name</label>
+                <input type="text" class="form-control" id="validationCustom02" placeholder="Last name" value=""
+                       required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+            <div class="col-md-6 mb-3">
+                <label for="validationCustomUsername">Username</label>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroupPrepend">@</span>
+                    </div>
+                    <input type="text" class="form-control" id="validationCustomUsername" placeholder="Username"
+                           aria-describedby="inputGroupPrepend" required>
+                    <div class="invalid-feedback">
+                        deine Angabe ist nicht korrekt !
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col-md-6 mb-3">
+                <label for="validationCustom03">City</label>
+                <input type="text" class="form-control" id="validationCustom03" placeholder="City" required>
+                <div class="invalid-feedback">
+                    deine Angabe ist nicht korrekt !
+                </div>
+            </div>
+            <div class="col-md-3 mb-3">
+                <label for="validationCustom04">State</label>
+                <input type="text" class="form-control" id="validationCustom04" placeholder="State" required>
+                <div class="invalid-feedback">
+                    deine Angabe ist nicht korrekt !
+                </div>
+            </div>
+            <div class="col-md-12 mb-3">
+                <label for="validationCustom05">sozialversicher Nummer</label>
+                <input type="text" class="form-control" id="validationCustom05" placeholder="your birthday" required>
+                <div class="invalid-feedback">
+                    deine Angabe ist nicht korrekt !
+                </div>
+            </div>
+            <div class="col-md-12 mb-3">
+                <label for="validationCustom05">Geburtsdatum</label>
+                <input type="text" class="form-control" id="validationCustom06" placeholder="sozialversicherungnummer"
+                       required>
+                <div class="invalid-feedback">
+                    deine Angabe ist nicht korrekt !
+                </div>
+            </div>
+            <div class="col-md-12 mb-3">
+                <label for="validationCustom05">Lieblings Sportler</label>
+                <input type="text" class="form-control" id="validationCustom07" placeholder="Dein Lieblings Sportler"
+                       required>
+                <div class="invalid-feedback">
+                    deine Angabe ist nicht korrekt !
+                </div>
+            </div>
+            <div class="col-md-6 mb-3">
+                <label for="validationCustom05">Lieblings Essen</label>
+                <input type="text" class="form-control" id="validationCustom08" placeholder="Dein Lieblings essen"
+                       required>
+                <div class="invalid-feedback">
+                    deine Angabe ist nicht korrekt !
+                </div>
+            </div>
+            <div class="col-md-6 mb-3">
+                <label for="validationCustom05">Lieblings Sportart</label>
+                <input type="text" class="form-control" id="validationCustom09" placeholder="Dein Lieblings Sport"
+                       required>
+                <div class="invalid-feedback">
+                    deine Angabe ist nicht korrekt !
+                </div>
+            </div>
+            <div class="col-md-6 mb-3">
+                <label for="validationCustom05">Größe</label>
+                <input type="text" class="form-control" id="validationCustom10" placeholder="Größe" required>
+                <div class="invalid-feedback">
+                    deine Angabe ist nicht korrekt !
+                </div>
+            </div>
+            <div class="col-md-6 mb-3">
+                <label for="validationCustom05">Gewicht</label>
+                <input type="text" class="form-control" id="validationCustom11" placeholder="Gewicht" required>
                 <div class="invalid-feedback">
                     deine Angabe ist nicht korrekt !
                 </div>
             </div>
         </div>
+        <div class="form-group">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                <label class="form-check-label" for="invalidCheck">
+                    Agree to terms and conditions
+                </label>
+                <div class="invalid-feedback">
+                    You must agree before submitting.
+                </div>
+            </div>
+        </div>
+        <button class="" type="submit">Danke für deine Nachricht</button>
+    </form>
+
+
+    <div class="socialmedia">
+        <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" class="bi bi-whatsapp"
+             viewBox="0 0 16 16">
+            <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" class="bi bi-phone-vibrate"
+             viewBox="0 0 16 16">
+            <path d="M10 3a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h4zM6 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h4a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H6z"/>
+            <path d="M8 12a1 1 0 1 0 0-2 1 1 0 0 0 0 2zM1.599 4.058a.5.5 0 0 1 .208.676A6.967 6.967 0 0 0 1 8c0 1.18.292 2.292.807 3.266a.5.5 0 0 1-.884.468A7.968 7.968 0 0 1 0 8c0-1.347.334-2.619.923-3.734a.5.5 0 0 1 .676-.208zm12.802 0a.5.5 0 0 1 .676.208A7.967 7.967 0 0 1 16 8a7.967 7.967 0 0 1-.923 3.734.5.5 0 0 1-.884-.468A6.967 6.967 0 0 0 15 8c0-1.18-.292-2.292-.807-3.266a.5.5 0 0 1 .208-.676zM3.057 5.534a.5.5 0 0 1 .284.648A4.986 4.986 0 0 0 3 8c0 .642.12 1.255.34 1.818a.5.5 0 1 1-.93.364A5.986 5.986 0 0 1 2 8c0-.769.145-1.505.41-2.182a.5.5 0 0 1 .647-.284zm9.886 0a.5.5 0 0 1 .648.284C13.855 6.495 14 7.231 14 8c0 .769-.145 1.505-.41 2.182a.5.5 0 0 1-.93-.364C12.88 9.255 13 8.642 13 8c0-.642-.12-1.255-.34-1.818a.5.5 0 0 1 .283-.648z"/>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" class="bi bi-cloud-download"
+             viewBox="0 0 16 16">
+            <path d="M4.406 1.342A5.53 5.53 0 0 1 8 0c2.69 0 4.923 2 5.166 4.579C14.758 4.804 16 6.137 16 7.773 16 9.569 14.502 11 12.687 11H10a.5.5 0 0 1 0-1h2.688C13.979 10 15 8.988 15 7.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 2.825 10.328 1 8 1a4.53 4.53 0 0 0-2.941 1.1c-.757.652-1.153 1.438-1.153 2.055v.448l-.445.049C2.064 4.805 1 5.952 1 7.318 1 8.785 2.23 10 3.781 10H6a.5.5 0 0 1 0 1H3.781C1.708 11 0 9.366 0 7.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383z"/>
+            <path d="M7.646 15.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 14.293V5.5a.5.5 0 0 0-1 0v8.793l-2.146-2.147a.5.5 0 0 0-.708.708l3 3z"/>
+        </svg>
+
     </div>
-    <div class="form-row">
-        <div class="col-md-6 mb-3">
-            <label for="validationCustom03">City</label>
-            <input type="text" class="form-control" id="validationCustom03" placeholder="City" required>
-            <div class="invalid-feedback">
-                deine Angabe ist nicht korrekt !
-            </div>
-        </div>
-        <div class="col-md-3 mb-3">
-            <label for="validationCustom04">State</label>
-            <input type="text" class="form-control" id="validationCustom04" placeholder="State" required>
-            <div class="invalid-feedback">
-                deine Angabe ist nicht korrekt !
-            </div>
-        </div>
-        <div class="col-md-12 mb-3">
-            <label for="validationCustom05">sozialversicher Nummer</label>
-            <input type="text" class="form-control" id="validationCustom05" placeholder="your birthday" required>
-            <div class="invalid-feedback">
-                deine Angabe ist nicht korrekt !
-            </div>
-        </div>
-        <div class="col-md-12 mb-3">
-            <label for="validationCustom05">Geburtsdatum</label>
-            <input type="text" class="form-control" id="validationCustom06" placeholder="sozialversicherungnummer"
-                   required>
-            <div class="invalid-feedback">
-                deine Angabe ist nicht korrekt !
-            </div>
-        </div>
-        <div class="col-md-12 mb-3">
-            <label for="validationCustom05">Lieblings Sportler</label>
-            <input type="text" class="form-control" id="validationCustom07" placeholder="Dein Lieblings Sportler"
-                   required>
-            <div class="invalid-feedback">
-                deine Angabe ist nicht korrekt !
-            </div>
-        </div>
-        <div class="col-md-6 mb-3">
-            <label for="validationCustom05">Lieblings Essen</label>
-            <input type="text" class="form-control" id="validationCustom08" placeholder="Dein Lieblings essen" required>
-            <div class="invalid-feedback">
-                deine Angabe ist nicht korrekt !
-            </div>
-        </div>
-        <div class="col-md-6 mb-3">
-            <label for="validationCustom05">Lieblings Sportart</label>
-            <input type="text" class="form-control" id="validationCustom09" placeholder="Dein Lieblings Sport" required>
-            <div class="invalid-feedback">
-                deine Angabe ist nicht korrekt !
-            </div>
-        </div>
-        <div class="col-md-6 mb-3">
-            <label for="validationCustom05">Größe</label>
-            <input type="text" class="form-control" id="validationCustom10" placeholder="Größe" required>
-            <div class="invalid-feedback">
-                deine Angabe ist nicht korrekt !
-            </div>
-        </div>
-        <div class="col-md-6 mb-3">
-            <label for="validationCustom05">Gewicht</label>
-            <input type="text" class="form-control" id="validationCustom11" placeholder="Gewicht" required>
-            <div class="invalid-feedback">
-                deine Angabe ist nicht korrekt !
-            </div>
-        </div>
+    <div class="icon_arrow down">
+        <svg onclick="moveUp()"  id="arrow" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+             class="arrow bi bi-arrow-down-up" viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+                  d="M11.5 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L11 2.707V14.5a.5.5 0 0 0 .5.5zm-7-14a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L4 13.293V1.5a.5.5 0 0 1 .5-.5z"/>
+        </svg>
     </div>
-    <div class="form-group">
-        <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-            <label class="form-check-label" for="invalidCheck">
-                Agree to terms and conditions
-            </label>
-            <div class="invalid-feedback">
-                You must agree before submitting.
-            </div>
-        </div>
+
+    <div class="footer">
+        copyright verenaArt
     </div>
-    <button class="" type="submit">Danke für deine Nachricht</button>
-</form>
-
-
-
-<div class="socialmedia">
-    <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
-        <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
-    </svg>
-    <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" class="bi bi-phone-vibrate" viewBox="0 0 16 16">
-        <path d="M10 3a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h4zM6 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h4a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H6z"/>
-        <path d="M8 12a1 1 0 1 0 0-2 1 1 0 0 0 0 2zM1.599 4.058a.5.5 0 0 1 .208.676A6.967 6.967 0 0 0 1 8c0 1.18.292 2.292.807 3.266a.5.5 0 0 1-.884.468A7.968 7.968 0 0 1 0 8c0-1.347.334-2.619.923-3.734a.5.5 0 0 1 .676-.208zm12.802 0a.5.5 0 0 1 .676.208A7.967 7.967 0 0 1 16 8a7.967 7.967 0 0 1-.923 3.734.5.5 0 0 1-.884-.468A6.967 6.967 0 0 0 15 8c0-1.18-.292-2.292-.807-3.266a.5.5 0 0 1 .208-.676zM3.057 5.534a.5.5 0 0 1 .284.648A4.986 4.986 0 0 0 3 8c0 .642.12 1.255.34 1.818a.5.5 0 1 1-.93.364A5.986 5.986 0 0 1 2 8c0-.769.145-1.505.41-2.182a.5.5 0 0 1 .647-.284zm9.886 0a.5.5 0 0 1 .648.284C13.855 6.495 14 7.231 14 8c0 .769-.145 1.505-.41 2.182a.5.5 0 0 1-.93-.364C12.88 9.255 13 8.642 13 8c0-.642-.12-1.255-.34-1.818a.5.5 0 0 1 .283-.648z"/>
-    </svg>
-    <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" class="bi bi-cloud-download" viewBox="0 0 16 16">
-        <path d="M4.406 1.342A5.53 5.53 0 0 1 8 0c2.69 0 4.923 2 5.166 4.579C14.758 4.804 16 6.137 16 7.773 16 9.569 14.502 11 12.687 11H10a.5.5 0 0 1 0-1h2.688C13.979 10 15 8.988 15 7.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 2.825 10.328 1 8 1a4.53 4.53 0 0 0-2.941 1.1c-.757.652-1.153 1.438-1.153 2.055v.448l-.445.049C2.064 4.805 1 5.952 1 7.318 1 8.785 2.23 10 3.781 10H6a.5.5 0 0 1 0 1H3.781C1.708 11 0 9.366 0 7.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383z"/>
-        <path d="M7.646 15.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 14.293V5.5a.5.5 0 0 0-1 0v8.793l-2.146-2.147a.5.5 0 0 0-.708.708l3 3z"/>
-    </svg>
-
-</div>
-<div class="icon_arrow down">
-    <svg onclick="moveUp()" id="arrow" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-arrow-down-up" viewBox="0 0 16 16">
-        <path fill-rule="evenodd" d="M11.5 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L11 2.707V14.5a.5.5 0 0 0 .5.5zm-7-14a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L4 13.293V1.5a.5.5 0 0 1 .5-.5z"/>
-    </svg>
-</div>
-
-<div class="footer">
-    copyright verenaArt
-</div>
-<!--todo icon pfeil rauf , section produkte shop , card section button , js animationen , social media icons die fix in der mitte sind , mein Angebot 2 spaltig machen , download button der nichts tut  -->
-<script src="script.js"></script>
+    <!--todo icon pfeil rauf , section produkte shop , card section button , js animationen , social media icons die fix in der mitte sind , mein Angebot 2 spaltig machen , download button der nichts tut  -->
+    <script src="script.js"></script>
 </body>
 </html>
