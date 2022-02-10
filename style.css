@@ -1,78 +1,88 @@
 * {
     margin: 0;
-    padding: 0;
-    font-family: "Sylfaen",sans-serif;
+    padding: 0.2rem;
+    font-family: "Sylfaen", sans-serif;
 }
 
 .navi {
     background: #000000;
     color: rgba(236, 236, 236, 0.28);
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*justify-content: center;*/
 }
 
-.logo{
+.logo {
     position: absolute;
     top: 0;
-    left: 0;
+    left: 10px;
     font-size: 2rem;
 }
-.logo:hover{
+
+.logo:hover {
     transform: rotateX(250deg);
 }
 
-nav{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    justify-items: center;
+nav ul {
+    padding-top: 50px;
+    display: inline-flex;
+    align-items: center;
+    /*display: flex;*/
+    /*flex-direction: row;*/
+    /*justify-content: center;*/
+    /*justify-items: center;*/
 }
 
-button{
+
+button {
     padding: 0.5rem 2rem;
     background: #000000;
     color: #c70f71;
     border: white 1px solid;
 }
-button:hover{
+
+button:hover {
     background-color: #ffffff;
     color: #ffffff;
 }
 
-h1{
+h1 {
     text-align: center;
 
 }
 
-.firstH1{
+.firstH1 {
     opacity: 0;
 }
 
-.firstH1:hover{
+.firstH1:hover {
     opacity: 1;
     position: absolute;
     top: 5rem;
     left: 5rem;
-    color:#c70f71 ;
+    color: #c70f71;
 }
 
-hr{
+hr {
     border: 0;
     height: 0; /* Firefox... */
     box-shadow: 0 0 10px 1px black;
+    width: 30%;
 }
-.carousel-inner{
+
+.carousel-inner {
     height: 50vh;
 }
-.card_bmi{
+
+.card_bmi {
     display: flex;
     flex-direction: row;
     justify-content: center;
     text-align: center;
     height: 500px;
 }
-.bmiRechner{
+
+.bmiRechner {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -80,39 +90,41 @@ hr{
     width: 30vw;
 }
 
-#result1{
-    font-size: 100px;
+#result1 {
+    font-size: 2rem;
     font-family: "Segoe UI Emoji";
     background-color: red;
 }
-.ownImg{
+
+.ownImg {
     border-radius: 150px;
     width: 200px;
 }
 
-.ownImg:hover{
+.ownImg:hover {
     transform: translateY(40px);
 }
 
-.content1{
+.content1 {
     background-image: url("img/lake-constance-g2a844ae72_640.jpg");
     background-attachment: fixed;
     background-position: center;
 }
 
-.card{
+.card {
     text-align: center;
     align-content: center;
     align-items: center;
 }
 
-.art{
+.art {
     display: flex;
     flex-direction: row;
     justify-content: center;
     text-align: center;
     flex-wrap: wrap;
 }
+
 .classname {
     -webkit-animation-name: cssAnimation;
     -webkit-animation-duration: 3s;
@@ -128,4 +140,27 @@ hr{
     to {
         -webkit-transform: rotate(0deg) scale(2) skew(0deg) translate(100px);
     }
+}
+
+.shop {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+}
+
+#arrow {
+    position: fixed;
+    bottom: 0;
+    right: 3rem;
+    cursor: crosshair;
+
+}
+
+.socialmedia {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    display: flex;
+    flex-direction: column;
 }

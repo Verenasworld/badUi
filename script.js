@@ -1,23 +1,42 @@
-
-
-console.log("test" + document.getElementById("bmiBtn"))
-
+//bmi
 document.getElementById("bmiBtn").addEventListener("click", function () {
-    document.getElementById("result1").innerHTML = "bitte mach dir einen Termin aus und schreibe mir es wird Zeit"
+    document.getElementById("result1").innerHTML = "bitte mach dir einen Termin aus und schreibe mir es wird Zeit sich zu bewegen "
 })
-
-document.getElementById('ownImage').addEventListener("mousemove",function (){
+//img alert
+document.getElementById('ownImage').addEventListener("mousemove", function () {
     alert("da bist du falsch")
-} )
-
-document.getElementById('btn1').addEventListener("click", function (){
-alert("du bist falsch")
+})
+//card btn1
+document.getElementById('btn1').addEventListener("click", function () {
+    alert("du bist falsch")
 })
 
 
+document.getElementById('hr').addEventListener("mouseover", function (){
+    document.getElementById('container').scrollLeft += 20;
+});
+
+
+//logo click function move logo to the right
+let train = document.getElementById('train');
+train.onclick = function () {
+    let start = Date.now();
+
+    let timer = setInterval(function () {
+        let timePassed = Date.now() - start;
+
+        train.style.left = timePassed / 5 + 'px';
+
+        if (timePassed > 2000) clearInterval(timer);
+
+    }, 20);
+}
+
+//form
 function ani() {
     document.getElementById('img').className = 'classname';
 }
+
 // Example starter JavaScript for disabling form submissions if there are invalid fields
 !function () {
     'use strict';
