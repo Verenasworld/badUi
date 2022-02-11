@@ -59,10 +59,16 @@ logo.onclick = function () {
 
 
 function ani() {
-
     document.getElementsByClassName('imgProduct').className = 'classname';
+}
 
+//flipcard function add csslass
 
+let cardM = document.getElementById('cardM');
+cardM.addEventListener("click",flipCard);
+
+function flipCard(){
+    cardM.classList.toggle('flipCard')
 }
 
 //form 
