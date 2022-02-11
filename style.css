@@ -109,7 +109,10 @@ hr {
 .ownImg {
     border-radius: 150px;
     width: 200px;
+    position: relative;
+
 }
+
 
 .ownImg:hover {
     transform: translateY(40px);
@@ -189,11 +192,22 @@ hr {
     right: 0;
     display: flex;
     flex-direction: column;
+    color: deeppink;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
 }
 
+@keyframes example {
+    0%   {color: deeppink;}
+    25%  {color: white;}
+    50%  {color: blue;}
+    100% {color: black;}
+}
 .socialmedia:hover{
     transform: scale(1.2);
 }
+
 
 .footer{
     background-color: #c70f71;
@@ -247,6 +261,6 @@ hr {
     text-align: center;
     transform: rotateY(180deg);
 }
-.flipCard{
+.flipCard {
     transform: rotateY(180deg);
 }
