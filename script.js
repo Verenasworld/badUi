@@ -1,7 +1,12 @@
-//shop
-function shopping(){
-    let psdl =  document.getElementById('password').value;
-    console.log("testausgabe password: "+psdl);
+//shop schlimmste log ever ! and reload page with set timeout function
+function shopping() {
+    let psdl = document.getElementById('password').value;
+    console.log("testausgabe password: " + psdl);
+    // methode set timeout  anonyme funktion , -  was und wann gemacht werden soll
+    //ich übergebe eine Methode Parameter
+    setTimeout(() => {
+        window.location.reload()
+    }, 5000);
 }
 
 //bmi
@@ -14,23 +19,27 @@ document.getElementById('ownImage').addEventListener("mousemove", function () {
 })
 //card btn1
 document.getElementById('btn1').addEventListener("click", function () {
-    alert("du bist falsch")
+    alert("du bist falsch");
+
 })
 
-
-
 //arrow move up
-function moveUp(){
-   let arrowMove=  document.getElementsByClassName('arrow');
-
-    arrowMove.addEventListener('mousemove',mouseOverEffect());
+function moveUp() {
+    let arrowMove = document.getElementById('arrow');
+    console.log("up");
+    arrowMove.classList.add('arrowup');
+    setTimeout(() => {
+        window.location.assign('index.html')
+    }, 3000);
 
 }
-function mouseOverEffect() {
-    this.classList.add('moveup');
-}
 
+// text animation fade out on mouseover
+let slideSource = document.getElementById('content');
+document.getElementById('content').addEventListener("mousemove", function () {
+    slideSource.classList.toggle('fade');
 
+})
 
 
 //logo click function move logo to the right
@@ -43,16 +52,20 @@ logo.onclick = function () {
 
         logo.style.left = timePassed / 2 + 'px';
 
-        if (timePassed > 2000) clearInterval(timer);
+        if (timePassed > 4000) clearInterval(timer);
 
-    }, 20);
+    }, 10);
 }
 
-//form
+
 function ani() {
-    document.getElementById('img').className = 'classname';
+
+    document.getElementsByClassName('imgProduct').className = 'classname';
+
+
 }
 
+//form 
 // Example starter JavaScript for disabling form submissions if there are invalid fields
 !function () {
     'use strict';
@@ -71,3 +84,6 @@ function ani() {
         });
     }, false);
 }();
+
+
+

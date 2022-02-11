@@ -13,7 +13,7 @@
 }
 
 .logo {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 10px;
     font-size: 2rem;
@@ -28,15 +28,17 @@
 
 nav ul {
     padding-top: 50px;
-    display: inline-flex;
-    align-items: center;
-    /*display: flex;*/
-    /*flex-direction: row;*/
-    /*justify-content: center;*/
-    /*justify-items: center;*/
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+
 }
 
-
+.buttonSection{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
 button {
     padding: 0.5rem 2rem;
     background: #000000;
@@ -51,6 +53,8 @@ button:hover {
 
 h1 {
     text-align: center;
+    font-size: 15px!important;
+    margin: 5px 10px 5px 20px;
 
 }
 
@@ -67,10 +71,13 @@ h1 {
 }
 
 hr {
+    position: absolute;
     border: 0;
-    height: 0; /* Firefox... */
+    height: 10px;
     box-shadow: 0 0 10px 1px black;
     width: 30%;
+    background-color: deeppink;
+    left: 40%;
 }
 
 .carousel-inner {
@@ -114,6 +121,14 @@ hr {
     background-position: center;
 }
 
+.content{
+    opacity: 1;
+    transition: opacity 10s;
+}
+.content.fade{
+    opacity: 0;
+}
+
 .card {
     text-align: center;
     align-content: center;
@@ -128,20 +143,20 @@ hr {
     flex-wrap: wrap;
 }
 
-.classname {
+.imgProduct {
     -webkit-animation-name: cssAnimation;
     -webkit-animation-duration: 3s;
-    -webkit-animation-iteration-count: 3;
+    -webkit-animation-iteration-count: infinite;
     -webkit-animation-timing-function: ease;
     -webkit-animation-fill-mode: forwards;
 }
 
 @-webkit-keyframes cssAnimation {
     from {
-        -webkit-transform: rotate(0deg) scale(1) skew(0deg) translate(100px);
+        -webkit-transform: rotate(0deg) scale(1) skew(0deg) translate(50px);
     }
     to {
-        -webkit-transform: rotate(0deg) scale(2) skew(0deg) translate(100px);
+        -webkit-transform: rotate(0deg) scale(2) skew(0deg) translate(50px);
     }
 }
 
@@ -171,8 +186,21 @@ hr {
     flex-direction: column;
 }
 
+.socialmedia:hover{
+    transform: scale(1.2);
+}
+
 .footer{
     background-color: #c70f71;
     text-align: center;
 }
 
+.arrowup{
+    transform: translateY(-900px);
+
+}
+
+.card:hover{
+    background-color: black;
+    color: deeppink;
+}
