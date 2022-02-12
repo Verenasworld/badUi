@@ -1,7 +1,6 @@
 //shop schlimmste log ever ! and reload page with set timeout function
 function shopping() {
     let psdl = document.getElementById('password').value;
-    console.log("testausgabe password: " + psdl);
     // methode set timeout  anonyme funktion , -  was und wann gemacht werden soll
     //ich übergebe eine Methode Parameter
     setTimeout(() => {
